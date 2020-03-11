@@ -1,0 +1,105 @@
+/* 头部样式的开始 */
+header{
+    width: 100%;
+    display: flex;
+    height: 0.88rem;
+    /* background:skyblue;  */
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+header .left{
+    width: .8rem;
+    /* 0.8rem—0可以不写—只有在小数点 */
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+}
+.icon-menu{
+    color: #fff;
+    font-size: .5rem;
+}
+header .center{
+    flex:1;
+    padding: 0.1rem 0.2rem;
+}
+header .center .center-content{
+    border-radius:30px;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    background-color: #fff;
+    position: relative;
+}
+.icon-jingdong{
+    color: red;
+    font-size: .5rem;
+    margin-left: 0.2rem;
+    position: relative;
+}
+.icon-jingdong::after{
+    content: "";
+    position: absolute;
+    top:0.05rem;
+    right:-0.2rem;
+    width: 1px;
+    height: 0.38rem;
+    border-left:1px solid #ccc ;
+}
+.icon-sousuo{
+    color:#ccc;
+    font-size: .4rem;
+    margin-left: 0.2rem;
+}
+.center-content input{
+    line-height: 0.68rem;
+    width: 3.2rem;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 1.6rem;
+}
+header .right{
+    width: .8rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #fff;
+}
+/* 头部样式的结束 */
+/* 轮播样式的开始 */
+.mainCenter{
+    width: 100%;
+    height: 3.8rem;
+    background: url("../images/head.jpg") no-repeat center top;
+    background-size:cover;
+}
+.swiper-container {
+    width: 100%;
+    height: 2.8rem;
+    padding-top: .88rem;
+}  
+/* 轮播样式的结束 */
+/* footer样式的开始 */
+footer{
+    background: #fff;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 1rem;
+    display:flex;
+    box-shadow:0 0 10px 0 hsla(0,6%,58%,.6);
+    /*   box-shadow:0 (x轴偏移量) 0(y轴偏移量) 10px(阴影的模糊大小) 0（阴影的半径） hsla（阴影的颜色）*/
+}
+footer section{
+    flex:1;
+    text-align: center;
+   padding-top: 0.05rem;
+}
+footer section img{
+    height: 0.9rem;
+}
+/* footer样式的结束 */

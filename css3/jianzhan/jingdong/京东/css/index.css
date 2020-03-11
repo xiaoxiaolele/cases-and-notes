@@ -1,0 +1,246 @@
+header {
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    line-height: 0.88rem;
+    /*background-color: #07cbc9;*/
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+header .left{
+    width: 0.8rem;
+    height: 0.88rem;
+    text-align: center;
+}
+header .left .icon-menu{
+    color: white;
+    font-size: 0.5rem;
+}
+header .search{
+    flex: 1;
+    padding: 0.12rem 0.2rem;
+}
+header .search .search-in{
+    border-radius: 0.3rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+header .search .search-in .icon-jingdong{
+    font-size: 0.5rem;
+    color: red;
+    margin-left: 0.2rem;
+    position: relative;
+
+}
+header .search .search-in .icon-jingdong::after{
+    content: "";
+    position: absolute;
+    top: 0.05rem;
+    left: 0.65rem;
+    width: 0.01rem;
+    height: 0.38rem;
+    border-left: 1px #ccc solid;
+}
+header .search .search-in .icon-sousuo{
+    font-size: 0.4rem;
+    padding-left: 0.25rem;
+    color: #cccccc;
+}
+header .search .search-in input{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    position: absolute;
+    top: 0.01rem;
+    left: 1.7rem;
+    font-size: 0.28rem;
+}
+header .right{
+    width: 0.8rem;
+    height: 0.88rem;
+    color: white;
+    font-size: 0.28rem;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height:1rem;
+    position:fixed;
+    bottom:0;
+    z-index: 10;
+    background: white;
+}
+footer ul{
+    width: 100%;
+    height: 1rem;
+    /*background-color: #07cbc9;*/
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    line-height: 1rem;
+    display: flex;
+    z-index: 10;
+}
+footer ul li{
+    flex: 1;
+    width: 1.3rem;
+    height: 1rem;
+    list-style: none;
+    text-align: center;
+}
+footer ul li a img{
+    height: 1rem;
+}
+.banner{
+    width: 100%;
+    background: url("../images/lADPGoGu68Xvyx7NA6vNBGU_1125_939.jpg") no-repeat center top;
+    height: 3.6rem;
+    background-size: cover;
+}
+
+.banner .swiper-container {
+    width: 100%;
+    max-width: 7rem;
+    height: 3.5rem;
+    padding-top: 0.88rem;
+
+}
+.banner .swiper-pagination-bullet{
+    width: 0.3rem;
+    height: 0.03rem;
+    display: inline-block;
+    background: black;
+    opacity: 0.5;
+}
+.banner .swiper-pagination-bullet-active{
+    background: white;
+    opacity: 0.8;
+}
+.banner .swiper-container .swiper-slide {
+    /*text-align: center;
+    font-size: 18px;
+    background: #fff;*/
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2rem;
+}
+.pro .swiper2{
+    width: 100%;
+    height: 3.24rem;
+    margin: 0.2rem 0;
+}
+.swiper2 .swiper-wrapper .swiper-slide{
+    display: flex;
+    flex-wrap: wrap;
+}
+.swiper2 .swiper-wrapper .swiper-slide .cate-item{
+    width: 20%;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    /*text-align: center;*/
+    flex-direction: column;/*灵活的项目将垂直显示*/
+    justify-content: center;/*居中显示*/
+}
+.swiper2 .swiper-wrapper .swiper-slide .cate-item img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.swiper2 .swiper-wrapper .swiper-slide .cate-item p{
+    font-size: 12px !important;
+    color: #666666;
+    padding-top: 0.1rem;
+}
+.swiper2 .swiper-pagination-bullet{
+    width: 0.3rem;
+    height: 0.03rem;
+    display: inline-block;
+    background: #666666;
+    opacity: 0.5;
+
+}
+.swiper2 .swiper-pagination-bullet-active{
+    background: red;
+    opacity: 0.8;
+}
+.pro .swiper2 .swiper-pagination{
+    bottom: 0;
+}
+.content{
+    width: 100%;
+    height: 10rem;
+    margin: 0.2rem 0;
+    background: #ffc9df;
+    padding: 0.2rem;
+    /*display: flex;*/
+}
+.content .top{
+    width: 7.4rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin: 0 auto;
+}
+.content .content-in{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /*overflow: hidden;*/
+    justify-content: space-between;/*将剩余的空白部分平均分配*/
+}
+.content .content-in .content-in-item{
+    width: 24%;
+
+    height: 2.4rem;
+    /*align-items: center;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+    position: relative;
+    margin-top: 0.2rem;
+    display: flex;
+
+}
+.content .content-in .content-in-item .kuai{
+    height: 50%;
+    width: 80%;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.15rem;
+}
+.content .content-in .content-in-item .wp{
+    width: 100%;
+    height: 100%;
+}
+.content .content-in .content-in-item .p-t{
+    position: absolute;
+    top: 1.45rem;
+    padding: 0 18%;
+
+    z-index: 9;
+    color: white;
+    font-size: 0.1rem;
+}
+.content .content-in .content-in-item .p-b{
+    position: absolute;
+    top: 1.9rem;
+    padding: 0 20%;
+    z-index: 9;
+    color: white;
+    font-size: .25rem;
+}

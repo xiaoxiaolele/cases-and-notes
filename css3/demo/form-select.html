@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单 select</title>
+</head>
+<body>
+<h1 align="center">注册信息</h1>
+<hr color="#336699" />
+<form action="action.html" method="post">
+    <table align="center" width="600px" bgcolor="#f2f2f2">
+        <tr>
+            <td align="right"><label for="username">姓名:</label></td>
+            <td align="left"><input type="text" name="username" maxlength="6" size="30" placeholder="请输入姓名" id="username"/></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="email">邮箱:</label></td>
+            <td align="left"><input type="text" name="email" value="@163.com" size="30" id="email"/></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="paw">密码:</label></td>
+            <td align="left"><input type="password" name="paw" placeholder="请输入密码" size="30" id="paw"/></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="paw-confirm">确认密码:</label></td>
+            <td align="left"><input type="password" name="paw-confirm" size="30" placeholder="请确认密码" id="paw-confirm"/></td>
+        </tr>
+        <tr>
+            <td align="right">上传照片:</td>
+            <td align="left"><input type="file" name="file"  /></td>
+        </tr>
+        <tr>
+            <td align="right">性别:</td>
+            <td align="left">
+                <label for="man">男</label>
+                <input type="radio" name="sex1" value="man" id="man"/>
+                <label for="woman">女</label>
+                <input type="radio" name="sex1" value="woman" id="woman"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">城市:</td>
+            <td align="left">
+                <select name="city">
+                    <option value="xz">--请选择--</option>
+                    <option value="beijing">北京</option>
+                    <option value="shanghai">上海</option>
+                    <option value="hangzhou">杭州</option>
+                    <option value="guangzhou">广州</option>
+                    <option value="fujiang">福建</option>
+                    <option value="ningbo">宁波</option>
+                    <option value="changchun">长春</option>
+                    <option value="shijazhuang">石家庄</option>
+                    <option value="haerbin">哈尔滨</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">爱好:</td>
+            <td align="left">
+                <label for="basckball">篮球</label>
+                <input type="checkbox" name="dx1" value="basckball" id="basckball"/>
+                <label for="football">足球</label>
+                <input type="checkbox" name="dx1" value="football" id="football"/>
+                <label for="ping-pong">乒乓球</label>
+                <input type="checkbox" name="dx1" value="ping-pang" id="ping-pong"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">简介:</td>
+            <td align="left">
+                <textarea name="jj" cols="30" rows="4" placeholder="请输入个人简介"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" name="button" value="点我" />
+                <input type="submit" name="submit" />
+                <input type="reset" name="reset" />
+                <!--<input type="image" name="image" src="image/image-button.jpg" width="60px"/>-->
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

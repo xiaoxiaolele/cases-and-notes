@@ -1,0 +1,132 @@
+.top{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #cccccc;
+}
+.top-in{
+    width: 100%;/*继承了父盒子的宽度，这样写更规范*/
+    max-width: 1280px;/*最大的宽度*/
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+.top-in-l{
+    /* width: 300px; 宽度就是占位的，当有了内容就不写宽度了*/
+    height: 40px;
+    float: left;
+    margin-left: 27.8%;/*我们要给百分比，因为我们缩小的页面的时候，距离也会变小*/
+}
+.top-in-l ul li{
+    float: left;
+}
+.top-in-l ul li a{
+    padding: 0 8px;/*我们前面学习的滑动门思想*/
+    display: block;
+}
+.top-in-l ul li a.current,.top-in-l ul li a:hover{/*优化代码，为了加薪*/
+    color: #fff;
+    background-color: #008fd5;
+}
+/* .top-in-l ul li a:hover{
+    color: #fff;
+    background-color: #008fd5;
+} */
+.top-in-r{
+    /* width: 290px; 宽度就是占位的，当有了内容就不写宽度了*/
+    height: 40px;
+    float: right;
+    /* background-color: pink; */
+}
+.lang,.tu{
+    float: left;
+}
+.tu a{
+    margin-left: 16px;
+}
+.tu .iconfont{
+    font-size: 32px;
+}
+.icon-weibo{
+    color: #ed5098;
+}
+.icon-weixin{
+    color: #6aaf28;
+}
+.icon-in{
+    color: #008fd5;
+}
+/* top 结束 */
+.header{
+    width: 100%;/*继承了父盒子的宽度，这样写更规范*/
+    max-width: 1280px;/*最大的宽度*/
+    height: 86px;
+    line-height: 86px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    margin-top: 18px;
+}
+.nav{
+    float: left;
+    margin-left: 8%;/*105/1280 = 0.082*/
+}
+.nav ul li{
+    float: left;
+    padding: 0 30px;/*这个也是我们滑动门的思想*/
+}
+.nav ul li a{
+    font-size: 16px;
+}
+.fdj{
+    float:right;
+}
+.icon-sousuo{
+    font-size: 24px;;
+}
+/* banner 开始 */
+.banner img{
+    width: 100%;/*继承了父盒子的宽度，这样写更规范*/
+    height: auto;/*高度给自动，这样缩放就变成响应式了*/
+    margin: 0 auto;
+}
+/* news 开始 */
+.news{
+    width: 100%;
+    height: 68px;
+    background-color: #018ed3;
+}
+.news-in{
+    width: 100%;/*继承了父盒子的宽度，这样写更规范*/
+    max-width: 1280px;/*最大的宽度*/
+    height: 68px;
+    line-height: 68px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.title{
+    width: 116px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: url("../images/news_information.png") no-repeat;
+    margin-top: 17px;/*外边距塌陷要注意*/
+    font-size: 18px;
+    color: #008fd5;
+    float: left;
+}
+.news-in p{
+    float: left;
+    color: #fff;
+    margin-left: 3%;/*45/1280=0.35*/
+}
+.news-in p a{
+    color: #fff;
+    font-size:16px;
+}
+.more{
+    float:right;
+    color: #fff;
+    font-size: 22px;
+    margin-right: 3%;/*42/1280=0.3*/
+}

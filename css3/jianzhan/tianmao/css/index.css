@@ -1,0 +1,359 @@
+/*头部*/
+.header{
+    width: 100%;
+
+    background: red;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+/*顶端头部ｆｌｅｘ布局设置宽和高*/
+.header .header-in .header-in-t{
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    line-height: 0.88rem;
+}
+/*设置最左边盒子的宽高*/
+.header .header-in .header-in-t .left{
+    width: 0.8rem;
+    height: 0.88rem;
+    text-align: center;
+}
+/*设置图标字体的大小*/
+.header .header-in .header-in-t .left i{
+    font-size: 0.5rem;
+    color: white;
+    font-weight: revert;
+}
+/*中间ｌｏｇｏ*/
+.header .header-in .header-in-t .logo{
+    flex: 1;
+    position: relative;
+}
+/*设置ｌｏｇｏ的大小并用绝对定位居中显示*/
+.header .header-in .header-in-t .logo img{
+    width: 2.38rem;
+    height: 0.4rem;
+    position: absolute;/*继承父级*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*设置右边盒子大小并居中显示*/
+.header .header-in .header-in-t .right{
+    width: 0.8rem;
+    height: 0.88rem;
+    text-align: center;
+    line-height: 0.88rem;
+    color: white;
+    font-size: 0.3rem;
+}
+/*搜索狂外框的大小*/
+.header .header-in-b{
+    width: 100%;
+    height: 0.92rem;
+    padding: 0 0.15rem 0.1rem;
+    box-sizing: border-box;
+}
+/*搜索框放大镜的位置*/
+.header .header-in-b .sousuo{
+    background-color: white;
+    height: 0.72rem;
+    border-radius: 0.15rem;
+    line-height: 0.72rem;
+    position: relative;
+}
+/*放大镜大小*/
+.header .header-in-b .sousuo i{
+    font-size: 0.5rem;
+    color: #cccccc;
+    margin: 0 0.2rem;
+}
+/*ｉｎｐｕｔ搜索框大小位置*/
+.header .header-in-b .sousuo input{
+    height: 0.72rem;
+    font-size: 0.3rem;
+    width: 80%;
+    line-height: 0.7rem;
+    position: absolute;
+    top: 0;
+}
+/*头部结束*/
+/*nav开始*/
+/*导航大小设置内边距*/
+.nav{
+    width: 100%;
+    padding: 1.86rem 0.2rem 0;
+}
+/*ｆｌｅｘ布局*/
+.nav .nav-in{
+    display: flex;
+    justify-content: space-around;/*讲剩余的空白部分平均分配*/
+}
+/*设置每块的大小*/
+.nav .nav-in .nav-in-selid{
+    width: 18.5%;
+    height: 1.54rem;
+    text-align: center;
+    flex-direction: column;/*垂直显示*/
+}
+.nav .nav-in .nav-in-selid a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*设置图片的大小*/
+.nav .nav-in .nav-in-selid a img{
+    width: 100%;
+    padding: 0.1rem 0.22rem 0.04rem;
+}
+/*设置文子大小*/
+.nav .nav-in .nav-in-selid a p{
+    font-size: 0.26rem;
+    color: #333333;
+}
+/*ｂａｎｎｅｒ图*/
+.banner{
+    width: 100%;
+    height: 2.64rem;
+    display: flex;
+    margin-top: 0.2rem;
+}
+.swiper1 .swiper-wrapper  {
+    width: 100%;
+    max-width: 7.02rem;
+}
+.swiper1 .swiper-wrapper .swiper-slide {
+    text-align: center;
+
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper1 .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper1 .swiper-pagination-bullet{
+    width: 0.4rem;
+    height: 0.05rem;
+    background: #cccccc;
+    border-radius: 0;
+}
+.swiper1 .swiper-pagination-bullet-active{
+    background: white;
+    opacity: 0.8;
+}
+/*ｂａｎｎｅｒ图结束*/
+
+.poc{
+    width: 100%;
+    margin-top: 0.1rem;
+    text-align: center;
+}
+.poc .img{
+    margin: 0 auto;
+}
+/*热销区*/
+/*总大小*/
+.rxq{
+    width: 100%;
+    margin-top: 0.1rem;
+}
+/*内容区大小flex布局*/
+.rxq .rxq-in{
+    width: 7.02rem;
+    display: flex;
+    flex-wrap: wrap;/* 换行--让子元素宽度起到作用 */
+    justify-content: space-between;/*让子元素空白空间起到自由平均分配*/
+    margin: 0 auto;
+}
+/*每个区域的大小*/
+.rxq .rxq-in .rxq-in-one{
+    width: 49%;
+    height: 2.7rem;
+    /*padding-top: 0.3rem;*/
+   /* background: red;*/
+}
+/*背景图*/
+.rxq .rxq-in .rxq-in-one .bg{
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg1.png") no-repeat;
+    background-size: cover;
+}
+/*商品区域*/
+.rxq .rxq-in .rxq-in-one .bg .img{
+    display: flex;
+    justify-content: space-around;/*空白区域平均分配*/
+    margin-top: 0.2rem;
+}
+/*每个商品站区块的大小*/
+.rxq .rxq-in .rxq-in-one .bg .img .img-l,.rxq .rxq-in .rxq-in-one .bg .img .img-r{
+    width: 40%;
+    height: 40%;
+    justify-content: space-around;/*空白区域平均分配*/
+    position: relative;
+    display: flex;/*flex将两件商品变成一行*/
+    flex-direction: column;/*将文字和图片垂直显示*/
+}
+.rxq .rxq-in .rxq-in-one .bg .img .img-l img,.rxq .rxq-in .rxq-in-one .bg .img .img-r img{
+    width: 100%;
+    height: 100%;
+}
+/*热销文字*/
+.rxq .rxq-in .rxq-in-one .bg .img .img-l span,.rxq .rxq-in .rxq-in-one .bg .img .img-r span{
+    padding: 0 0.01rem;
+    background: rgb(255, 237, 241);
+    font-size: 0.1rem;
+    border: 0.01rem solid red;
+    color: red;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+.rxq .rxq-in .rxq-in-one .bg .bg-t{
+    font-size: 0.32rem;
+    padding-left: 0.4rem;
+    font-weight: bolder;
+    padding-top: 0.3rem;
+}
+/*第二层机上边距*/
+.rxq .rxq-in .rxq-in-b{
+    margin-top: 0.15rem;
+}
+/*热销区结束*/
+/*商品区*/
+/*盒子的最大宽度*/
+.constion{
+    width: 100%;
+    max-width: 7.02rem;
+    margin: 0 auto;
+}
+/*ｆｌｅｘ布局*/
+.constion .constion-in{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+/*每个商品快的大小*/
+.constion .constion-in .constion-in-l{
+    width: 49%;
+    /*height: 5.52rem;*/
+    flex-direction: column;/*垂直显示*/
+    border: 0.01rem #ececec solid;
+    position: relative;
+    margin-top: 0.2rem;
+}
+/*产品位置大小*/
+.constion .constion-in .constion-in-l .constion-in-l-t{
+    height: 62%;
+    padding: 0.3rem;
+    background: rgba(0, 0, 0, 0.03);
+}
+/*商品图片*/
+.constion .constion-in .constion-in-l .constion-in-l-t img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+/*粉色背景标签*/
+.constion .constion-in .constion-in-l .biaoqin{
+    position: absolute;
+    top: 60%;
+    left: 0.2rem;
+    font-size: 0.2rem;
+    padding: 0.05rem 0.1rem;
+    background: rgb(205, 163, 177);
+    color: white;
+}
+/*商品说明*/
+.constion .constion-in .constion-in-l p{
+    margin-top: 0.15rem;
+    padding: 0.2rem 0.2rem 0 0.2rem;
+    font-size: 0.28rem;
+}
+/*退货运费险*/
+.constion .constion-in .constion-in-l img{
+    width: 1.46rem;
+    height: 0.28rem;
+    margin-left: 0.2rem;
+    margin-top: 0.1rem;
+    vertical-align: sub;/*设置与文本的下表对齐垂直对齐文本的下标*/
+}
+/*５元券*/
+.constion .constion-in .constion-in-l .quan{
+    border: 1px red solid;
+    font-size: 0.22rem;
+    margin-top: 0.1rem;
+    color: red;
+}
+/*价钱与找相似*/
+.constion .constion-in .constion-in-l .jg{
+    margin: 0.1rem 0 0.3rem 0;
+    position: relative;
+    display: flex;
+}
+.constion .constion-in .constion-in-l .jg span:first-child{
+    font-size: 0.32rem;
+    font-weight: bolder;
+    color: red;
+    margin-left: 0.2rem;
+    vertical-align: sub;
+}
+.constion .constion-in .constion-in-l .jg span:last-child{
+    font-size: 0.22rem;
+    padding: 0.1rem 0.18rem;
+    background: rgb(255, 230, 235);
+    border-radius: 1rem;
+    color: red;
+    position: absolute;
+    right: 0.1rem;
+}
+footer{
+    width: 100%;
+    height: 1rem;
+    position:fixed;
+    bottom:0;
+    z-index: 10;
+    background: white;
+}
+footer ul{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+   /* line-height: 1rem;*/
+    justify-content: space-around;
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+}
+footer ul li{
+    width: 1.3rem;
+    height: 1rem;
+    line-height: 0.35rem;
+    text-align: center;
+    padding: 0.2rem 0;
+}
+footer ul li a span{
+    display: block;
+    font-size: 0.2rem;
+}
+footer ul li a .iconfont{
+    font-size: 0.5rem;
+}
+footer ul li a span:first-child,footer ul li a i:first-child{
+    color: #666666;
+}

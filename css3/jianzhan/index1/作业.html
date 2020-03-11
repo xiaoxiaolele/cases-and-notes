@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{height: 2000px;/*给body加高度，放下我里面的盒子大小*/}
+        .box{
+            width: 302px;
+            height: 302px;
+            border-radius: 50%;
+            margin: 100px auto;
+            position: relative;
+
+        }
+        .box1{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #07cbc9;
+            border-radius: 50%;
+            background: url("images/musicb.jpg");
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transform-origin: left;
+            transition: all 1s;
+        }
+         .box2{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #07cbc9;
+            border-radius: 50%;
+            background: url("images/musict.jpg");
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box:hover .box1{
+            transform: rotatey(180deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+</div>
+</body>
+</html>

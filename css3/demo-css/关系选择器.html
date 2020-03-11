@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li[cl]{
+            color: red;
+        }
+        li[cl^=chen]{
+            color: red;
+        }
+        li[cl$=le]{
+            color: #07cbc9;
+        }
+        li[cl*=li]{
+            color: #000099;
+
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li cl>文字内容</li>
+    <li>文字内容</li>
+    <li>
+        <p>文字内容</p>
+        <div>
+            <p>孙子标签</p>
+        </div>
+    </li>
+    <li cl="chen">文字内容</li>
+    <li>文字内容</li>
+    <li cl="chenle">文字内容</li>
+    <li cl="liyao">文字内容</li>
+    <li>文字内容</li>
+</ul>
+</body>
+</html>

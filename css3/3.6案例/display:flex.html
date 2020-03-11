@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        div ul{
+            display: flex;
+        }
+        div ul li{
+            flex: 1;
+            border: 1px #008fd5 solid;
+        }
+        div ul li:nth-child(2){
+            flex: 2;
+        }
+        div ul li:last-child{
+            flex: 3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+        </ul>
+    </div>
+</body>
+</html>

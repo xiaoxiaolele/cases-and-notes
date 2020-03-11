@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            /* 换行--让子元素宽度起到作用 */
+            justify-content: space-around;
+            /* 让子元素空白空间起到自由平均分配 
+            子元素为三个以上：space-around，
+            子元素为2个以下space-between*/
+
+        }
+        ul li{
+            list-style: none;
+            width: 31%;
+            height: 200px;
+            border: 1px solid red;
+            border-radius: 8%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>第1个盒子</li>
+        <li>第2个盒子</li>
+        <li>第3个盒子</li>
+        <li>第4个盒子</li>
+        <li>第5个盒子</li>
+        <li>第6个盒子</li>
+        <li>第7个盒子</li>
+        <li>第8个盒子</li>
+        <li>第9个盒子</li>
+    </ul>
+</body>
+</html>

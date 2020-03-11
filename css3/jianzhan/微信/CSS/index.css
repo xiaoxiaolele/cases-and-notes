@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+header{
+    background: url("../images/bg.jpg") repeat-x;
+}
+/*ｌｏｇｏ和导航的位置*/
+header .main{
+    width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+
+    overflow: hidden;
+    zoom: 1;
+}
+header .main .logo{
+    float: left;
+    margin: 12px;
+}
+/*盗汗浮动的位置*/
+header .main ul{
+    float: right;
+}
+/*导航浮动*/
+header .main ul li{
+    float: left;
+    padding-top: 21px;
+    margin-right: 5px;
+}
+/*logo大小*/
+header .main .logo img{
+    height: 50px;
+}
+/*导航背景*/
+header .main ul li a,header .main ul li a span{
+    display: block;
+    height: 33px;
+    line-height: 33px;
+    background: url("../images/sprite.png") no-repeat;
+}
+header .main ul li a{
+    background-position: left -193px;
+    padding-left: 15px;
+}
+header .main ul li a span{
+    background-position: right -193px;
+    padding-right: 15px;
+}
+/*当鼠标悬浮时*/
+header .main ul li a:hover{
+    background-position: left -143px;
+    color: #7c7c7c;
+}
+header .main ul li a:hover span{
+    background-position: right -143px;
+}
+/*鼠标悬浮结束*/
+/*导航结束*/
+/*banner图　侧边导航*/
+.top{
+    width: 100%;
+    background: #dededc;
+
+}
+section .banner{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+section .banner .left{
+    float: left;
+    width: 400px;
+}
+section .banner aside h1{
+    font-size: 26px;
+    font-weight: 400;
+    padding: 45px 0 3px;
+}
+section .banner aside p{
+    font-size: 16px;
+    color: #979797;
+    margin: 0.33em 0;
+}
+/*侧边导航按钮*/
+section .banner aside .button .button1{
+    display: block;
+    width: 230px;
+    height: 73px;
+    line-height: 44px;
+    background: url("../images/download.png") no-repeat;
+}
+/*侧边导航按钮阴影*/
+section .banner aside .button .yinying a{
+    width: 225px;
+    height: 60px;
+    position: absolute;
+    top: 200px;
+    display: none;
+}
+section aside .button{
+    width: 225px;
+    margin-top: 15px;
+}
+/*侧边导航按钮鼠标悬挺时*/
+section aside .button:hover .yinying a{
+    display: block;
+    background: lawngreen;
+    opacity: 25%;
+}
+section aside ul{
+    margin-top: 10px;
+    line-height: 1.8em;
+}
+section aside ul li .dot{
+    height: 10px;
+    width: 10px;
+    display: block;
+    float: left;
+    background: url("../images/dian.png") no-repeat;
+    margin: 16px 11px 0 0;
+}
+section aside ul li a{
+    color: #78b917;
+    font-size: 16px;
+}
+section aside ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+/*左边结束*/
+/*右边开始*/
+/*banner 大小*/
+section .banner .right{
+    float: right;
+    width: 700px;
+    overflow: hidden;
+    zoom: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+section .banner .right .jt{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/*左三角*/
+section .banner .right .jt .j-left{
+    float: left;
+    position: absolute;
+    top: 210px;
+    display: none;
+}
+/*中间ｂａｎｎｅｒ部分*/
+section .banner .right .jt .centener{
+    float: left;
+    width: 620px;
+    height: 400px;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/*右三角*/
+section .banner .right .jt .j-right{
+    float: right;
+    position: absolute;
+    top: 210px;
+    left: 660px;
+    display: none;
+}
+/*将隐藏的三角做悬浮效果*/
+section .banner .right .jt:hover .j-left,section .banner .right .jt:hover .j-right{
+    display: block;
+}
+/*ｂａｎｎｅｒ文字部分*/
+section .banner .right .jt .centener .pos li .zs1{
+    margin-top: 20px;
+    font-size: 14px;
+}
+section .banner .right .jt .centener .pos li .zs2 a{
+    color: #609700;
+}
+section .banner .right .jt .centener .pos li .zs2 a:hover{
+    color: black;
+    text-decoration: underline;
+}
+section .banner .right .jt .centener .point{
+    position: absolute;
+    top: 350px;
+    left: 275px;
+
+}
+section .banner .right .jt .centener .point li{
+    float: left;
+}
+section .banner .right .jt .centener .point li a{
+    width: 26px;
+    height: 26px;
+    display: block;
+    text-indent: -9999px;
+    background: url(//res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/DxopYJv.png) no-repeat -12px -110px;
+
+}
+/*banner结束*/
+/*内容*/
+.container{
+    width: 1100px;
+    margin: 50px auto;
+    overflow: hidden;
+    zoom: 1;
+}
+.container .left{
+    width: 700px;
+    float: left;
+}
+.container .left ul li{
+    float: left;
+    margin-right: 10px;
+}
+.container .left ul li h2 {
+    font-size: 14px;
+
+}
+.container .left ul li p{
+    font-size: 14px;
+    padding-top: 6px;
+    color: #999;
+}
+.container .left ul li p a{
+    display: block;
+    color: #609700;
+}
+.container .left ul li p a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+/*ｃｏｎｔａｉｎｅｒ左变部分完成*/
+/*ｃｏｎｔａｉｎｅｒ右边部分开始*/
+.container .right{
+    float: right;
+}
+.container .right h2{
+    font-size: 14px;
+}
+.container .right ul{
+    list-style: initial;
+    color: #999;
+    font-size: 14px;
+}
+.container .right ul li{
+    margin-top: 8px;
+    width: 400px;
+}
+.container .right ul li a{
+    display: block;
+    font-size: 14px;
+    float: left;
+}
+.container .right ul li a .right{
+    display: block;
+    float: right;
+}
+.container .right .liao a{
+    color: #609700;
+}
+.container .right .liao a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.container .right .weixin .ico_contactus {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 45px;
+    position: relative;
+    top: 14px;
+    left: 0;
+    background: url("../images/weixin.jpg");
+}
+.container .right .contactus a{
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    color: black;
+    font-weight: bolder;
+    text-align: left;
+    float: left;
+    position: relative;
+    top: 8px;
+}
+/*container 结束*/
+/*ｆｏｏｔｅｒ开始*/
+footer{
+    width: 1100px;
+    height: 80px;
+    margin: 20px auto;
+    border-top: 1px #999 solid;
+}
+footer .left{
+    float: left;
+    margin-top: 10px;
+}
+footer .left a,footer .left span,footer .left p{
+    color: #999;
+    margin-top: 10px;
+}
+footer .left p{
+    font-size: 11px;
+}
+footer .right{
+    float: right;
+    margin-top: 10px;
+}
+footer .right a,footer .right span{
+    color: #999;
+}
+/*jieshu*/

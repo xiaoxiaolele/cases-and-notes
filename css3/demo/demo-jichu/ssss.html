@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <style type="text/css">
+        #nav{height:40px; background-color:#b6ff00;}
+        #nav *{margin:0;padding:0;}
+        #nav a{text-decoration:none;}
+        /*一级菜单*/
+        #nav ul{margin:0 auto; width: 800px; display:block;list-style-type:none;}
+        #nav ul li{display:block;width:120px;height:40px; line-height:40px; float:left;text-align:center;border-right:solid 1px white;}
+        #nav ul li:last-child{border-right:none;}
+        #nav ul li:hover{background-color:red;}
+        /*二级菜单*/
+        #nav ul li ul{display:none;}
+        #nav ul li ul li{width:120px; height:40px; line-height:40px;background-color:rgba(95, 181, 43, 0.50);border-bottom:solid 1px #808080;}
+        #nav ul li:hover ul{display:block;position:relative;width:120px;}
+        #nav ul li ul li:hover{background-color:red;}
+        /*三级菜单*/
+        #nav ul li:hover ul li ul{display:none;}
+        #nav ul li:hover ul li:hover ul{display:block; position: relative; left: 120px; top: -30px;}
+        #nav ul li:hover ul li:hover ul li{width:100px; height:30px; line-height: 30px;}
+        #nav ul li:hover ul li:hover ul li:hover{background-color:red;}
+    </style>
+</head>
+<body>
+<div id="nav">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">公司简介</a>
+            <ul>
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">发展历程</a></li>
+            </ul>
+        </li>
+        <li><a href="#">新闻动态</a>
+            <ul>
+                <li><a href="#">行业新闻</a>
+                    <ul>
+                        <li><a href="#">前沿科技</a></li>
+                        <li><a href="#">国外资讯</a></li>
+                        <li><a href="#">行业信息</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">企业动态</a></li>
+            </ul>
+        </li>
+        <li><a href="#">产品中心</a>
+            <ul>
+                <li><a href="#">产品种类</a>
+                    <ul>
+                        <li><a href="#">传统设备</a></li>
+                        <li><a href="#">外部设备</a></li>
+                        <li><a href="#">智能设备</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">产品列表</a>
+                    <ul>
+                        <li><a href="#">CPU</a></li>
+                        <li><a href="#">内存</a></li>
+                        <li><a href="#">硬盘</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">服务支持</a>
+            <ul>
+                <li><a href="#">驱动下载</a></li>
+                <li><a href="#">在线咨询</a></li>
+            </ul>
+        </li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+</div>
+</body>
+</html>

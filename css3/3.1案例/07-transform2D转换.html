@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            transform: translate(100px,100px);
+            /* 位移translate(水平,垂直); */
+        }
+        div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            transform: rotate(45deg);
+            /*  旋转rotate(45deg) 正值是顺时针，负值是逆时针*/
+            margin: 150px;
+        }
+        div:nth-child(3){
+            width: 100px;
+            height: 100px;
+            background-color: skyblue; 
+            transform: scale(1.5,1.5);
+            margin: 150px;
+            /* scale(水平,垂直); 注意不要加单位 */
+        }
+    </style>
+</head>
+<body>
+    <div>水平和垂直移动100px</div>
+    <div>角度旋转单位是deg</div>
+    <div>水平和垂直缩放1.5倍，变大了</div>
+</body>
+</html>

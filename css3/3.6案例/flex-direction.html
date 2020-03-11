@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 100%;
+            max-width: 1130px;
+            margin: 0 auto;
+            display: flex;/*制定弹性布局*/
+            flex-direction: row;/*指定ｘ轴布局*/
+            /*flex-direction: column;!*指定ｙ轴布局*!*/
+        }
+        .left{
+            background: red;
+            /*display: inline-block;*/
+        }
+        .cention{
+            /*display: inline-block;*/
+            flex: 1;
+        }
+        .right{
+            background: #008fd5;
+            /*display: inline-block;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">11</div>
+        <div class="cention">1111</div>
+        <div class="right">111</div>
+    </div>
+</body>
+</html>

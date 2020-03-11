@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            background-color: orange;
+            margin: 10px;
+        }
+        div:first-child{
+            padding: 30px;/*之前的写法是外加，把盒子往外加大了，所以要自己算内减*/
+            border:10px solid #000;
+            box-sizing: border-box;/*谁需要谁加就可以了*/
+        }
+        div:last-child{
+            padding: 30px;
+            /*box-sizing: border-box;这个是电脑帮我们自动的算好了--盒子内减。数学不好的同学再也不用担心了。再也不算内减，他会自动帮我们减--强大，他会自动往里面算。*/
+            border:10px solid #000;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>这是第一个盒子</div>
+    <div>这是第二个盒子</div>
+</body>
+</html>

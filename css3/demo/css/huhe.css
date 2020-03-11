@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{list-style: none}
+.header{
+    width: 100%;
+    height: 50px;
+    background: #333333;
+    overflow: hidden;
+    zoom: 1;
+}
+.header .logo img{
+    height: 50px;
+    float: left;
+    margin-left: 50px;
+}
+.header .navigation{
+    float: right;
+}
+.header .navigation ul{
+    line-height: 50px;
+    margin-right: 50px;
+}
+.header .navigation ul li{
+    float: left;
+    margin-right: 40px;
+    font-size: 20px;
+    color: #93999f;
+}
+.header .navigation ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+

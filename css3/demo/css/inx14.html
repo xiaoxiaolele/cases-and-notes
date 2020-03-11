@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            float: none;
+            font-family: "微软雅黑";
+        }
+        .acoten{
+            width: 100px;
+            background-color: #ececec;
+            margin: 0 auto;
+        }
+        div{border: 1px #d9dde1 solid;}
+        h4{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        span{
+            display: block;
+            text-align: center;
+            border-bottom: 1px #d9dde1 solid;
+            font-size: 14px;
+        }
+        .acotens{
+            display: none;
+        }
+        .list{
+            display: none;
+        }
+        .fist{
+            display: none;
+        }
+        .ones{
+            border-bottom: none;
+        }
+        .twos{
+            border-top: 1px #d9dde1 solid;
+        }
+        .acoten .one:hover .acotens{display: block;}
+        .acoten .two:hover .list{display: block;}
+        .acoten .therr:hover .fist{display: block;}
+    </style>
+</head>
+<body>
+<div class="acoten">
+    <div class="one">
+        <h4>家 电</h4>
+        <span class="acotens twos">冰箱</span>
+        <span class="acotens">电视</span>
+        <span class="acotens ones">洗衣机</span>
+    </div>
+    <div class="two">
+        <h4>洗 护</h4>
+        <span class="list twos">洗衣粉</span>
+        <span class="list">消毒液</span>
+        <span class="list ones">柔顺剂</span>
+    </div>
+    <div class="therr">
+        <h4>衣 物</h4>
+        <span class="fist twos">半袖</span>
+        <span class="fist">长袖</span>
+        <span class="fist ones">裤子</span>
+    </div>
+</div>
+
+</body>
+</html>

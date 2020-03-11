@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {font-family: 'iconfont';
+    src: url('fonts/iconfont.eot'); /* IE9*/
+    src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+/* 以上代码都是放在css初始化里面 */
+div{
+    font-family: 'iconfont';
+    font-size: 100px;
+    color: red;
+    text-shadow: 2px 2px 2px #000;
+    
+}
+p{
+    font-family: 'iconfont'; 
+    font-size: 100px;
+    color: yellowgreen;
+    /* 扩展 */
+    text-shadow:2px 2px 2px #000 ; 
+    /*文字阴影text-shadow:水平位置 垂直位置 羽化范围 影子颜色*/
+}
+    </style>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_204990_2yqmema3nnv.css">
+</head>
+<body>
+    <div>&#xe604;</div>
+    <p>&#xe60c;</p>
+    <!-- 
+        使用步骤：我已经下载完了，解压你下载好的图标字体压缩包
+         找到demo.html文件,上面是你刚下载的图标，下面就是使用步骤
+         第一、建立一个fonts文件夹就是放字体的（把解压的4个字体拷贝进来 eot、svg、ttf、woff）--存放在fonts文件夹里面
+         第二、直接拷贝demo文件里面的font-face声明字体
+
+     -->
+    <!-- 
+        图标字体：其实图标字体本意是文字，只是以图片的方式来展示而已，其实还是文字（可以加文字三属性的：字号、字体、颜色...）
+        优势：免费、兼容性非常好，兼容各种浏览器--其实图标字体早就有了，从苹果出来之后，随着设计走向，现在的设计流行的是扁平化设计，颜色越少越好。--所以图片字体有火了。最重要的是免费---推荐大家使用
+     -->
+     <h3 class="iconfont icon-component"></h3>
+</body>
+</html>

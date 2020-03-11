@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li:first-child{
+            color: yellowgreen; 选择满足条件的第一个元素
+        } */
+        /* li:last-child{
+            color:pink;选择满足条件的最后一个元素
+        } */
+        /* li:only-child{
+            color:pink; 选择ul里面只有一个li的元素
+        } */
+        /* li:nth-child(6){
+            color:red; 选择第n个元素，n是从1开始
+        } */
+        /* ul:empty{
+            background-color: pink;
+            height: 30px;别忘了加高度
+        } */
+
+       /* li:not(.one){
+            color:yellowgreen;除了某个元素之外，都选中
+        }*/
+
+        div:before{/*befor 在元素之前（在标签之前）content是必须要写的*/
+            content:"我们";
+        }
+        div:after{/*after 在元素之后（除了加文字还可以加盒子，现在目前知道加文字就可以了。生成是行内元素，如果想要放置盒子，定转换--了解后面案例详细）content是必须要写的*/
+            content:"同学们棒棒哒，都很优秀的，继续加油.跟上老师的脚步"
+        }
+
+        /* 
+        扩展：刚刚同学们问的权重 我按照由大到小往下排列
+        1、ID选择器 #id
+        2、class 类选择器 .class
+        3、标签 p div
+        4、通配符 * 
+        5、属性选择器
+        6、伪类 :hover
+        7、子代选择器、紧邻选择器
+         */
+
+    </style>
+</head>
+<body>
+    <!-- 总结：我们的伪类选择器用的是:冒号 -->
+    <ul>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li class="one">除了我之外都会选择</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+    </ul>
+    <ul>
+        <li>我是ul的唯一的一个孩子</li>
+    </ul>
+    <ul></ul>
+    <div>二十三期</div>
+</body>
+</html>

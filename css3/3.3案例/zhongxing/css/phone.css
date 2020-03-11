@@ -1,0 +1,10 @@
+.phone-show{
+    display: block;
+}
+.phone-hide{
+    display: none;
+}
+.article ul li{
+    width: 100%;
+    float: none;
+}

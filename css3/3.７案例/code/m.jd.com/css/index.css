@@ -1,0 +1,161 @@
+/* 头部样式的开始 */
+header{
+    width: 100%;
+    display: flex;
+    height: 0.88rem;
+    /* background:skyblue;  */
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+header .left{
+    width: .8rem;
+    /* 0.8rem—0可以不写—只有在小数点 */
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+}
+.icon-menu{
+    color: #fff;
+    font-size: .5rem;
+}
+header .center{
+    flex:1;
+    padding: 0.1rem 0.2rem;
+}
+header .center .center-content{
+    border-radius:30px;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    background-color: #fff;
+    position: relative;
+}
+.icon-jingdong{
+    color: red;
+    font-size: .5rem;
+    margin-left: 0.2rem;
+    position: relative;
+}
+.icon-jingdong::after{
+    content: "";
+    position: absolute;
+    top:0.05rem;
+    right:-0.2rem;
+    width: 1px;
+    height: 0.38rem;
+    border-left:1px solid #ccc ;
+}
+.icon-sousuo{
+    color:#ccc;
+    font-size: .4rem;
+    margin-left: 0.2rem;
+}
+.center-content input{
+    line-height: 0.68rem;
+    width: 3.2rem;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 1.6rem;
+}
+header .right{
+    width: .8rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #fff;
+}
+/* 头部样式的结束 */
+/* 轮播1样式的开始 */
+.mainCenter{
+    width: 100%;
+    height: 4rem;
+    background: url("../images/head.jpg") no-repeat center top;
+    background-size:cover;
+    padding-top: 0.88rem;
+}
+.mainCenter .swiper-container {
+    width: 7rem;
+    height: 3rem;
+    border-radius: 6px;
+  }
+  .mainCenter .swiper-slide img{
+      width: 100%;
+      height: 100%;
+  }
+  .swiper-pagination{
+    bottom: 3px !important;
+  }
+.swiper-pagination-bullet{
+    /* swiper-pagination-bullet
+    是轮播生成的我们轮播点默认的样式，在这里我们重新给它定义（变小） */
+      width: 8px;
+      height: 3px;
+      background: #ccc;
+      display: inline-block;
+      opacity: 0.5;
+  }
+.swiper-pagination-bullet-active{
+      /* sswiper-pagination-bullet-active
+    是轮播生成的我们轮播点默认当前（图片显示的对应的点）的样式，
+    在这里我们重新给它定义（变小） */
+      opacity: 1;
+      background:orange;
+  }
+/* 轮播1样式的结束 */
+
+/* 产品轮播样式的开始 */
+
+/* 产品轮播样式的结束 */
+.pro .swiper2{
+    height: 3.24rem;
+    width: 100%;
+    margin: 0.2rem 0;
+}
+.swiper2 .swiper-slide{
+    display: flex;
+    flex-wrap: wrap;
+}
+.swiper2 .swiper-slide .cate-item{
+    width:20%;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: center;弹性子元素水平居中 */
+    /* align-items: center;弹性子元素垂直居中 */
+}
+.swiper2 .swiper-slide .cate-item img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.swiper2 .swiper-slide .cate-item p{
+    font-size:12px;
+    color: #666;
+    padding-top: 0.1rem;
+}
+/* footer样式的开始 */
+footer{
+    background: #fff;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 1rem;
+    display:flex;
+    box-shadow:0 0 10px 0 hsla(0,6%,58%,.6);
+    /*   box-shadow:0 (x轴偏移量) 0(y轴偏移量) 10px(阴影的模糊大小) 0（阴影的半径） hsla（阴影的颜色）*/
+}
+footer section{
+    flex:1;
+    text-align: center;
+   padding-top: 0.05rem;
+}
+footer section img{
+    height: 0.9rem;
+}
+/* footer样式的结束 */

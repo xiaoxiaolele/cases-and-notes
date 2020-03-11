@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            background: black;
+            overflow: hidden;
+            zoom: 1;
+            position: fixed;
+        }
+        .header img{
+            height: 80px;
+            float: left;
+            line-height: 80px;
+            margin-left: 60px;
+        }
+        .header ul{
+            height: 80px;
+            float: right;
+            line-height: 80px;
+            margin-right: 60px;
+        }
+        .header ul li{
+            float: left;
+            color: #93999f;
+            margin-right: 60px;
+            font-size: 25px;
+        }
+        .header ul li:hover{
+            color: white;
+            cursor: pointer;
+        }
+        .constion{
+            width: 100%;
+            height: 1000px;
+            background: #ececec;
+        }
+        .constion .left{
+            width: 60%;
+            float: left;
+            line-height: 60px;
+            text-align: justify;
+            position: absolute;
+            top: 200px;
+            left: 350px;
+            /*background: #93999f;*/
+        }
+        .constion .left ul li{
+            font-size: 20px;
+        }
+        .constion .left ul li span{
+            margin-right: 20px;
+        }
+        .constion .right ul li span{
+            margin-right: 20px;
+        }
+        .constion .left ul li .one{
+            background: lightpink;
+        }
+        .constion .left h5{
+            font-size: 20px;
+        }
+        .constion .right{
+            width: 40%;
+            float: right;
+            text-align: justify;
+            line-height: 60px;
+            font-size: 20px;
+            position: relative;
+            top: 200px;
+            /*background: black;*/
+
+        }
+        .constion .right h5{
+            font-size: 20px;
+        }
+        .footer{
+            width: 100%;
+            height: 80px;
+            background: black;
+            position: relative;
+            top: 0;
+            left: 0;
+
+        }
+        .footer ul {
+            color: #93999f;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -500px;
+            margin-top: -15px;
+        }
+        .footer ul li{
+            float: left;
+            margin-left: 50px;
+            font-size: 25px;
+        }
+        .footer ul li:hover{
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <img src="http://climg.mukewang.com/58c0d2d900016ce303000100.png" alt="">
+            <ul>
+                <li>课程</li>
+                <li>职业路径</li>
+                <li>实战</li>
+                <li>猿问</li>
+                <li>手记</li>
+            </ul>
+        </div>
+        <div class="constion">
+            <div class="left">
+                <h5>课程推荐</h5>
+                <ul>
+                    <li>
+                        <span class="one">职业路径</span>
+                        <span>HTML5与CSS3实现动态网页</span>
+                    </li>
+                    <li>
+                        <span class="one">职业路径</span>
+                        <span>零基础入门Android</span>
+                    </li>
+                    <li>
+                        <span class="one">职业路径</span>
+                        <span>ios基础语法与常用控件</span>
+                    </li>
+                    <li>
+                        <span class="one">职业路径</span>
+                        <span>PHP入门开发</span>
+                    </li>
+                    <li>
+                        <span class="one">职业路径</span>
+                        <span>JAVA入门开发</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <h5>相关课程</h5>
+                <ul>
+                    <li>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </li>
+                    <li>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Jquery</span>
+                    </li>
+                    <li>
+                        <span>移动端基础</span>
+                        <span>移动端APP开发</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>网站首页</li>
+                <li>企业合作</li>
+                <li>人才招聘</li>
+                <li>联系我们</li>
+                <li>常见问题</li>
+                <li>友情链接</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li>p{
+            color: red;
+        } */
+        /* li p{
+            color: pink; 这两个有的同学会混淆，所以又写一次
+        } */
+        /* li[qg]{
+            color: #f40; 自定义的属性，自己定义的一个属性来加样式，不用系统自带的。以后看到不认识的名字就明白了，原来用的是自定义属性选择器
+        } */
+
+        /* li[qg^=qiang]{ 英文状态下按shift+6 ^
+            color:yellowgreen ; 选择以qiang开头的
+        } */
+
+        /* li[qg$="qiang"]{
+            color:red;选择以qiang结尾的
+        } */
+
+        li[qg*=g]{ /* 按shift + 8 就会出现* 号*/
+            color:red; /*选择包含g的所有*/
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>文字内容</li>
+        <li>文字内容</li>
+        <li>
+            <p>子标签</p>
+            <div>
+                <p>孙子标签</p>
+            </div>
+        </li>
+        <li qg>这个是我们自己定义是属性(也叫做自定义属性选择器)</li>
+        <li>文字内容</li>
+        <li qg="qianggao">我是以qing开头</li>
+        <li>文字内容</li>
+        <li qg="xiaoqiang">我是以qiang结尾的</li>
+        <li>文字内容</li>
+        <li qg="g">文字内容</li>
+    </ul>
+</body>
+</html>

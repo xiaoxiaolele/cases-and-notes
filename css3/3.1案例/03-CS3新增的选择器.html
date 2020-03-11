@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*li>p{
+            color:deeppink;子代选择器，只选择儿子
+        }*/
+        /*li p{
+            color: yellowgreen;后代选择器，不管是儿子还是孙子都会选择的
+        }*/
+        /* .one+li{
+            color: pink; 紧邻选择器，向下选择第一个邻居
+        } */
+        .one~li{
+            color:yellowgreen;/*兄弟姐妹选择器，向下选择所有的邻居*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 
+        回顾：标签选择器、类选择器、id选择器、后代选择器、并集选择器、*通配符（全局规则选择器）、标签指定选择器
+        CS3的关系选择器： > 空格 + ~
+
+     -->
+     <ul>
+         <li>列表</li>
+         <li>列表</li>
+         <li>
+             <p>我是li的儿子标签</p>
+             <div>
+                 <p>我是li的孙子标签</p>
+             </div>
+         </li>
+         <li>列表</li>
+         <li>列表</li>
+         <li class="one">我是one列表</li>
+         <li>我是one这个列表的第一个邻居</li>
+         <li>列表</li>
+         <li>列表</li>
+         <li>列表</li>
+         <li>列表</li>
+         <li>列表</li>
+     </ul>
+</body>
+</html>

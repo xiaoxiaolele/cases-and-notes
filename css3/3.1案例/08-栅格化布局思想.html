@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 800px;
+            height: 200px;
+            margin: 0 auto;
+            background: pink;
+            overflow: hidden;/*别忘了给溢出隐藏*/
+        }
+        .son1{
+            width: 25%;/*我是有4个盒子，100%除以4得到是25%*/
+            height: 200px;
+            float: left;
+            padding: 0 10px; /*左右10px加在一起就是20px*/
+            box-sizing: border-box;/*盒子内减*/
+    
+        }
+        .boxin{/*超出了父盒子，我们上面有溢出隐藏*/
+            margin: 0 -10px;/*就是为了保证能放下第一个盒子左侧的10px和最后一个盒子的右侧10px*/
+            height: 200px;
+            background-color: yellowgreen;
+        }
+        .key{/*为了响应式所以给100%*/
+            width: 100%;
+            height: 100%;
+            background: orangered;
+        
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        思想：BS的核心思想叫做栅格化布局，首先有一个大盒子，大盒子里面有一个boxin是为了能放下里面的小盒子，会在原来的基础上再加一个小盒子，为了保证响应式给宽度100%，高度100%
+
+        总结：就是在原来的结构上加了一个宽度和高度为100%的小盒子，为了响应式
+
+        思想不是一下就能明白的，需要时间。如果你能明白就是打算，想不到的没关系。先听懂来，我们后面大量用，用多了你就熟练了----绝对能加高薪
+     -->
+     <div class="box">
+         <div class="boxin">
+             <div class="son1">
+                 <div class="key">1</div>
+             </div>
+             <div class="son1">
+                <div class="key">2</div>
+            </div>
+            <div class="son1">
+                <div class="key">3</div>
+            </div>
+            <div class="son1">
+                <div class="key">4</div>
+            </div>
+         </div>
+     </div>
+</body>
+</html>

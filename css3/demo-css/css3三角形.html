@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 0;
+            height: 0;
+            border-width: 10px;/*边框宽度*/
+            border-style: solid dashed dashed dashed;
+            border-color: red transparent transparent transparent;
+        }
+        div:hover{
+            transform: rotate(180deg);
+            transform-origin: 50% 25%;
+            transition: all 0.2s ease 0s;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

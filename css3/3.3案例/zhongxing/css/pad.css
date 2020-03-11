@@ -1,0 +1,9 @@
+.active ul li dl {
+    min-height: 480px;
+}
+.footer-t dl dt{
+    font-size: 14px;
+}
+.footer-t dl dd a{
+    font-size: 12px;
+}

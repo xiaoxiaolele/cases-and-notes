@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 100%;
+            display: flex;
+            /* 指定弹性布局 */
+            flex-direction:row;
+            /* 指定主轴x：flex-direction:row; y:flex-direction:column;*/
+        }
+        .left{
+            background: red;
+            display: inline-block;
+        }
+        .center{
+            display: inline-block;
+            flex:1;
+            /* 剩余空间自由分配，指定权重 */
+            border: 1px solid red;
+        }
+        .right{
+            background: blue;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">left</div>
+        <div class="center">center</div>
+        <div class="right">center</div>
+    </div>
+</body>
+</html>

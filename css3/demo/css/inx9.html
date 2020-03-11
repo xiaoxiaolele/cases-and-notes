@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            background: yellow;
+            width: 100%;
+            height: 100%;
+        }
+        .one{
+            background: orange;
+            width: 30%;
+            height: 30%;
+        }
+        .two{
+            background: orange;
+            max-width: 30%;
+            max-height: 30%;
+        }
+        .three{
+            background: orange;
+            min-height: 200px;
+            max-width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <p class="one">第一个P标签是父元素宽、高的30%</p>
+    <p class="two">第二个P标签的最大宽度是父元素的30%，最大高度是父元素的30%</p>
+    <p class="three">第三个p标签师傅级元素的70%</p>
+</div>
+</body>
+</html>

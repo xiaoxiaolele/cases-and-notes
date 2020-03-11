@@ -1,0 +1,10 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, p, th, td { margin:0; padding:0; }
+body { font-size:14px; color:#666; font-family:Verdana, Microsoft YaHei, Simsun; }
+img { display: block;}/*解决图片下面大约5px的空白缝隙的bug*/
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }/*设置所有标题统一大小*/
+em,i{ font-style:normal; }/*清除倾斜，设置为正常*/
+input, button, select, textarea { outline:none; }/*清除input蓝色边框*/ 
+textarea { resize:none; }/*进制拖拽文本区域*/
+a { color: #666; text-decoration:none; }
+a:hover { color: #f60;}

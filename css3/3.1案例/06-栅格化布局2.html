@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 我们先用前面前面的思想来写--引出栅格化布局 
+        换个方法来做实现不会错位的问题
+        */
+        .box{
+            width: 800px;
+            height: 200px;
+            margin: 0 auto;
+            background: hotpink;
+            overflow: hidden;/*给这个最外面的大盒子一个溢出隐藏就ok了*/
+        }
+        .son1{
+            width: 185px;
+            height: 200px;
+            background: yellowgreen;
+            float: left;
+            margin-right: 20px;
+        }
+        /* 给这个boxin这个盒子原因是能放下里面所有的小盒子的大小的 */
+        .boxin{/*这个核心思想非常实用，在线轮播图很多都是这个思想*/
+            width: 1000px; /*这个宽度超过父盒子，超过就会溢出，给外面的大盒子加溢出隐藏*/
+            height: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 需求：排四个盒子，两端是没有距离的，中间要20px -->
+    <div class="box">
+        <div class="boxin">
+            <div class="son1">1</div>
+            <div class="son1">2</div>
+            <div class="son1">3</div>
+            <div class="son1">4</div>
+        </div>
+    </div>
+</body>
+</html>
